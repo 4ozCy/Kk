@@ -23,7 +23,7 @@ from discord.ext import commands
 import os  # Import the os module
 
 # Define a list of toxic words (you can add more words to this list)
-toxic_words = ['kduy', 'kdor', 'jui', 'jmr', 'fuck', 'nigga', 'nigger', 'bitch', 'b!tch', 'ass', 'sex', 'anal', 'joy']
+toxic_words = ['kduy', 'kdor', 'jui', 'jmr', 'fuck', 'nigga', 'nigger', 'bitch', 'b!tch', 'ass', 'sex', 'anal', 'shit', 'sh!t', 'niga', 'fucker', 'gay', 'fucked', 'g@y', 'fucking', 'fk', 'fking']
 
 # Define intents
 intents = discord.Intents.default()
@@ -53,7 +53,7 @@ async def on_message(message):
             # Create an embed for the warning message
             warn_embed = discord.Embed(
                 title="Warning",
-                description=f"{message.author.mention}, please refrain from using toxic language!",
+                description=f"{message.author.mention}, bad language aren't allow here!",
                 color=discord.Color.red()
             )
             # Send the embed to the channel
